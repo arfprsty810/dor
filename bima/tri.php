@@ -1,4 +1,3 @@
-clear
 <?php
 echo @color("nevy","───────────────────────────────────────────\n");
 echo @color("green","                 Dor Three\n");
