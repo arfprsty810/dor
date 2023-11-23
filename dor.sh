@@ -26,12 +26,12 @@ sleep 2
 if [ $pilih -eq 1 ]
 then
     clear
-    php axis/axis.php
+    php ~/dor/axis/axis.php
     
 elif [ $pilih -eq 2 ]
 then
     clear
-    php bima/tri.php
+    php ~/dor/bima/tri.php
 
 elif [ $pilih -eq 3 ]
 then
