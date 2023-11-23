@@ -11,7 +11,9 @@ pkg install git wget bash curl python php -y
 cd
 rm -rf dor
 git clone https://github.com/arfprsty810/dor.git
+cd
 cd dor
+rm -rf install.sh
 chmod +x dor.sh
 chmod +x axis/axis.php
 chmod +x bima/tri.php
