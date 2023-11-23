@@ -3,7 +3,6 @@ clear
 echo @color("nevy","───────────────────────────────────────────\n");
 echo @color("green","                 Dor Three\n");
 echo @color("nevy","───────────────────────────────────────────\n");
-echo ""
 echo @color('purple', "NOMOR\t\t: ");
 $nomor = trim(fgets(STDIN));
 $login = login($nomor);
