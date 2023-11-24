@@ -18,7 +18,9 @@ if (strpos(json_encode($login), '"status":true')) {
     $aktif = $profil['activeUntil'];
     $sisakuota = $profil['sumOfInternet'];
     $poin = $profil['stotalPoin'];
-
+    
+    cek:
+    echo @color("nevy","\n\n───────────────────────────────────────────\n\n");
 	echo @color('yellow', "PULSA\t\t: ");
 	echo @color('nevy', "$balance\n");
 	echo @color('yellow', "MASA AKTIF\t: ");
@@ -27,53 +29,37 @@ if (strpos(json_encode($login), '"status":true')) {
     echo @color('nevy', "$sisakuota\n");
     echo @color('yellow', "BONSTRI\t\t: ");
     echo @color('nevy', "$poin Poin\n");
-    cek:
-    echo @color('green', "PILIH PAKET:\n");
-    echo @color('yellow', "[1] Welcome Reward 5GB ==> Rp 1\n[2] (NEW) 10GB 30 Hari ==> Rp 15000\n[3] (NEW) 15GB 30 Hari ==> Rp 20000\n[4] 25GB 25rb (Diskon) ==> Rp 25000\n[5] 25GB 24 Jam 20 Hari ==> Rp 25000\n[6] (NEW) 25GB 20 Hari ==> Rp 25000\n[7] (NEW) 25GB 20 Hari ==> Rp 25000\n[8] 25GB 24 Jam 30 Hari ==> Rp 29000\n[9] (NEW) 25GB 30 Hari ==> Rp 29000\n[10] (NEW) 55GB 30 Hari ==> Rp 50000\n[11] (NEW) 65GB 30 Hari ==> Rp 60000\n[12] (NEW) 75GB 30 Hari ==> Rp 75000\n[13] (NEW) 90GB 30 Hari ==> Rp 90000\n[14] (NEW) 100GB 30 Hari ==> Rp 90000\n");
-    echo @color('green', "PILIH : ");
+    echo @color("nevy","\n───────────────────────────────────────────\n");
+    echo @color('green', "PILIH PAKET : \n
+[1] Welcome Reward 5GB ==> Rp.1
+[2] (NEW) 1GB 1 Hari ==> Rp.1.000
+[3] Spesial 10GB 30 Hari == Rp.10.000
+[4] (NEW) 12GB 10 Hari ==> Rp.15.000
+[5] 30GB 30 Hari ==> Rp.20.000
+[6] 60GB 30 Hari ==> Rp.30.000
+\n");
+    echo @color("nevy","───────────────────────────────────────────\n");
+    echo @color('green', " PILIH : ==> ");
     $pilih = trim(fgets(STDIN));
     switch ($pilih) {
+    
             case '1':
             $prodid = '25669';
             break;
             case '2':
-            $prodid = '25245';
+            $prodid = '28052';
             break;
             case '3':
-            $prodid = '25459';
+            $prodid = '28037';
             break;
             case '4':
-            $prodid = '22648';
+            $prodid = '27728';
             break;
             case '5':
-            $prodid = '23160';
+            $prodid = '28036';
             break;
             case '6':
-            $prodid = '25254';
-            break;
-            case '7':
-            $prodid = '25264';
-            break;
-            case '8':
-            $prodid = '23164';
-            break;
-            case '9':
-            $prodid = '25267';
-            break;
-            case '10':
-            $prodid = '25469';
-            break;
-            case '11':
-            $prodid = '25690';
-            break;
-            case '12':
-            $prodid = '25247';
-            break;
-            case '13':
-            $prodid = '25476';
-            break;
-            case '14':
-            $prodid = '25693';
+            $prodid = '28038';
             break;
         
         default:
@@ -85,7 +71,7 @@ if (strpos(json_encode($login), '"status":true')) {
     $name = $cek['product']['productName'];
     $price = $cek['product']['productPrice'];
     $deskripsi = $cek['product']['productDescription'];
-    echo @color('yellow', "NAMA PAKET\t: ");
+    echo @color('yellow', "\n\nNAMA PAKET\t: ");
     echo @color('nevy', "$name\n");
     echo @color('yellow', "HARGA\t\t: ");
     echo @color('nevy', "$price\n");
