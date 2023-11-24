@@ -8,16 +8,16 @@ clear
 echo "▀█▀ █▀▀ █▄░▄█ █▀▄ ▄▀▄ █░▄▀ "
 echo "░█░ █▀▀ █░█░█ █▀█ █▀█ █▀▄░ "
 echo "░▀░ ▀▀▀ ▀░░░▀ ▀▀░ ▀░▀ ▀░▀▀ "
-echo "Author : \033[37;1;5m™D-JumPer™"
-echo "Github : \033[37;1;5mhttps://github.com/arfprsty810/"
-echo "Versi  : \033[37;1;5m3.0"
+echo "Author : ™D-JumPer™"
+echo "Github : https://github.com/arfprsty810/dor.git"
+echo "Versi  : 1.0"
 echo "──────────────────────────────────────────────────"$r
 echo ""
 echo "[★]====[ ★=== Select Menu ===★ ]====[★]"
 echo ""
 echo "[★] [ 1 ] [★] Axis"
 echo "[★] [ 2 ] [★] Three"
-echo "[★] [ 3 ] [★] Keluar"
+echo "[★] [ 99 ] [★] Keluar"
 echo ""
 echo "[★]====[ ★=== Select Menu ===★ ]====[★]"
 echo "──────────────────────────────────────────────────"$r
@@ -35,12 +35,14 @@ then
     clear
     php ~/dor/bima/tri.php
 
-elif [ $pilih -eq 3 ]
+elif [ $pilih -eq 99 ]
 then
     echo "[!] Keluar";
+    echo ""
+    echo ""
     exit
 else
     echo "[!] Pilihan tidak ada"
     sleep 1
-    sh dor.sh
+    sh ~/dor/dor.sh
 fi
